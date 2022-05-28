@@ -17,6 +17,16 @@
       "versioning": "loose"
     },
     {
+      "matchDepTypes": [
+        "action"
+      ],
+      "matchPackageNames": [
+        "github/super-linter"
+      ],
+      "prCreation": "not-pending",
+      "stabilityDays": 1
+    },
+    {
       "automerge": true,
       "automergeType": "branch",
       "matchManagers": [
