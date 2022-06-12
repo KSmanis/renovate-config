@@ -27,6 +27,15 @@
       "stabilityDays": 1
     },
     {
+      "allowedVersions": "<=7.28.1",
+      "matchDepTypes": [
+        "action"
+      ],
+      "matchPackageNames": [
+        "relekang/python-semantic-release"
+      ]
+    },
+    {
       "automerge": true,
       "automergeType": "branch",
       "matchManagers": [
