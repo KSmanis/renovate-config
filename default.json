@@ -27,7 +27,7 @@
       "stabilityDays": 1
     },
     {
-      "allowedVersions": "<=7.28.1",
+      "allowedVersions": "!/^7\\.29\\.[0-6]$/",
       "matchDepTypes": [
         "action"
       ],
