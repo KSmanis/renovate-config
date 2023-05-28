@@ -39,6 +39,7 @@
       "automerge": true,
       "automergeType": "branch",
       "matchManagers": [
+        "docker-compose",
         "dockerfile",
         "github-actions",
         "pre-commit"
