@@ -1,7 +1,7 @@
 # renovate-config
 
-[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
-[![pre-commit](https://github.com/KSmanis/renovate-config/workflows/pre-commit/badge.svg)](https://github.com/KSmanis/renovate-config/actions?workflow=pre-commit)
-[![super-linter](https://github.com/KSmanis/renovate-config/workflows/super-linter/badge.svg)](https://github.com/KSmanis/renovate-config/actions?workflow=super-linter)
+[![lint](https://github.com/KSmanis/renovate-config/actions/workflows/lint.yml/badge.svg)](https://github.com/KSmanis/renovate-config/actions/workflows/lint.yml)
+[![pre-commit enabled](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovatebot&logoColor=white)](https://renovatebot.com/)
 
 Personal configuration preset for Renovate bot.

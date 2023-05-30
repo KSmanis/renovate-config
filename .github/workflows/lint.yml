@@ -1,0 +1,45 @@
+---
+name: lint
+
+on: [push, pull_request]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Set up Python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3
+      - name: Install pre-commit
+        run: pipx install --python '${{ steps.setup-python.outputs.python-path }}' pre-commit
+      - name: Cache pre-commit hooks
+        id: cache-pre-commit
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pre-commit
+          key: python-${{ steps.setup-python.outputs.python-version }}-pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
+          restore-keys: python-${{ steps.setup-python.outputs.python-version }}-pre-commit-
+      - name: Prune pre-commit hooks
+        if: steps.cache-pre-commit.outputs.cache-hit != 'true'
+        run: pre-commit gc
+      - name: Run pre-commit
+        run: pre-commit run --all-files --color=always --show-diff-on-failure
+
+  super-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Run super-linter
+        uses: github/super-linter@v5.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_GITHUB_ACTIONS: false
+          VALIDATE_MARKDOWN: false
+          VALIDATE_YAML: false
