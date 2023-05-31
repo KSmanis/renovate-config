@@ -9,20 +9,19 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
-      - name: Set up Python
-        id: setup-python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3
       - name: Install pre-commit
-        run: pipx install --python '${{ steps.setup-python.outputs.python-path }}' pre-commit
+        run: pipx install pre-commit
+      - name: Identify Python version
+        run: echo "PYTHON_VERSION=$(python -V | cut -d' ' -f2 | cut -d. -f-2)" >> "$GITHUB_ENV"
       - name: Cache pre-commit hooks
         id: cache-pre-commit
         uses: actions/cache@v3
         with:
           path: ~/.cache/pre-commit
-          key: python-${{ steps.setup-python.outputs.python-version }}-pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
-          restore-keys: python-${{ steps.setup-python.outputs.python-version }}-pre-commit-
+          key: pre-commit-${{ env.PYTHON_VERSION }}-${{ hashFiles('.pre-commit-config.yaml') }}
+          restore-keys: |
+            pre-commit-${{ env.PYTHON_VERSION }}-
+            pre-commit-
       - name: Prune pre-commit hooks
         if: steps.cache-pre-commit.outputs.cache-hit != 'true'
         run: pre-commit gc
