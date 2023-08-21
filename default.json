@@ -45,6 +45,15 @@
         "github-actions",
         "pre-commit"
       ]
+    },
+    {
+      "automerge": false,
+      "matchManagers": [
+        "pre-commit"
+      ],
+      "matchPackageNames": [
+        "python-poetry/poetry"
+      ]
     }
   ]
 }
