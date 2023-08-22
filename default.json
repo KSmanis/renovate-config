@@ -49,10 +49,11 @@
     },
     {
       "automerge": false,
-      "matchManagers": [
-        "pre-commit"
+      "groupName": "poetry",
+      "matchDatasources": [
+        "github-tags"
       ],
-      "matchPackageNames": [
+      "matchDepNames": [
         "python-poetry/poetry"
       ]
     }
