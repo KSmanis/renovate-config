@@ -3,6 +3,7 @@
   "extends": [
     "config:best-practices",
     "regexManagers:dockerfileVersions",
+    "regexManagers:githubActionsVersions",
     ":enablePreCommit"
   ],
   "packageRules": [
