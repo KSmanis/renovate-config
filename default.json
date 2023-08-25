@@ -12,7 +12,6 @@
         "github-tags"
       ],
       "matchPackageNames": [
-        "pre-commit/mirrors-mypy",
         "psf/black",
         "shellcheck-py/shellcheck-py"
       ],
@@ -27,15 +26,6 @@
       ],
       "prCreation": "not-pending",
       "stabilityDays": 1
-    },
-    {
-      "allowedVersions": "!/^7\\.29\\.[0-6]$/",
-      "matchDepTypes": [
-        "action"
-      ],
-      "matchPackageNames": [
-        "relekang/python-semantic-release"
-      ]
     },
     {
       "automerge": true,
