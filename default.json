@@ -12,6 +12,7 @@
         "github-tags"
       ],
       "matchPackageNames": [
+        "SonarSource/sonarcloud-github-action",
         "psf/black",
         "shellcheck-py/shellcheck-py"
       ],
