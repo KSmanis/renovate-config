@@ -13,10 +13,18 @@
       ],
       "matchPackageNames": [
         "SonarSource/sonarcloud-github-action",
-        "psf/black",
         "shellcheck-py/shellcheck-py"
       ],
       "versioning": "loose"
+    },
+    {
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackageNames": [
+        "psf/black"
+      ],
+      "versioning": "pep440"
     },
     {
       "matchDepTypes": [
