@@ -56,5 +56,8 @@
         "python-poetry/poetry"
       ]
     }
-  ]
+  ],
+  "pyenv": {
+    "enabled": false
+  }
 }
