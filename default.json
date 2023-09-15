@@ -43,7 +43,8 @@
         "docker-compose",
         "dockerfile",
         "github-actions",
-        "pre-commit"
+        "pre-commit",
+        "regex"
       ]
     },
     {
