@@ -49,6 +49,18 @@
     },
     {
       "automerge": false,
+      "matchManagers": [
+        "docker-compose",
+        "dockerfile",
+        "github-actions",
+        "regex"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "automerge": false,
       "groupName": "poetry",
       "matchDatasources": [
         "github-tags"
