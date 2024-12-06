@@ -76,6 +76,18 @@
       "matchDepNames": [
         "python-poetry/poetry"
       ]
+    },
+    {
+      "automerge": false,
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchDepNames": [
+        "alpine"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ]
     }
   ],
   "pyenv": {
