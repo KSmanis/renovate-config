@@ -13,6 +13,7 @@
       ],
       "matchPackageNames": [
         "SonarSource/sonarcloud-github-action",
+        "SonarSource/sonarqube-scan-action",
         "shellcheck-py/shellcheck-py"
       ],
       "versioning": "loose"
