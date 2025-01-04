@@ -9,6 +9,15 @@
   "packageRules": [
     {
       "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "/(^|\\/)linuxserver\\//"
+      ],
+      "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-ls(?<build>\\d+)|(\\.|-r)(?<build>\\d+)-ls(?<revision>\\d+))$"
+    },
+    {
+      "matchDatasources": [
         "github-tags"
       ],
       "matchPackageNames": [
