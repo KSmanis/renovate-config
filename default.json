@@ -89,6 +89,17 @@
     },
     {
       "automerge": false,
+      "groupName": "uv",
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchDepNames": [
+        "astral-sh/uv",
+        "astral-sh/uv-pre-commit"
+      ]
+    },
+    {
+      "automerge": false,
       "matchDatasources": [
         "docker"
       ],
