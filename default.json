@@ -3,7 +3,7 @@
   "customManagers": [
     {
       "customType": "jsonata",
-      "datasourceTemplate": "github-releases",
+      "datasourceTemplate": "github-tags",
       "depNameTemplate": "astral-sh/uv",
       "fileFormat": "toml",
       "managerFilePatterns": [
