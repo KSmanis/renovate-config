@@ -29,12 +29,11 @@ repos:
     hooks:
       - id: markdownlint
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.22
+    rev: 1.0.0
     hooks:
       - id: mdformat
         additional_dependencies:
           - mdformat-gfm
-          - mdformat-tables
         args: ["--number", "--wrap", "80"]
   # YAML
   - repo: https://github.com/adrienverge/yamllint
