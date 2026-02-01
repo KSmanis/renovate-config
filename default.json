@@ -125,6 +125,15 @@
       "matchUpdateTypes": [
         "minor"
       ]
+    },
+    {
+      "description": "Reduce noisy updates",
+      "matchPackageNames": [
+        "renovatebot/pre-commit-hooks"
+      ],
+      "schedule": [
+        "before 4am on monday"
+      ]
     }
   ],
   "pyenv": {
