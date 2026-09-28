@@ -42,15 +42,6 @@
       "versioning": "loose"
     },
     {
-      "matchDatasources": [
-        "github-tags"
-      ],
-      "matchPackageNames": [
-        "psf/black"
-      ],
-      "versioning": "pep440"
-    },
-    {
       "matchDepTypes": [
         "action"
       ],
@@ -89,16 +80,6 @@
       ],
       "matchUpdateTypes": [
         "major"
-      ]
-    },
-    {
-      "automerge": false,
-      "groupName": "poetry",
-      "matchDatasources": [
-        "github-tags"
-      ],
-      "matchDepNames": [
-        "python-poetry/poetry"
       ]
     },
     {
