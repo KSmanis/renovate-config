@@ -66,6 +66,7 @@
         "docker-compose",
         "dockerfile",
         "github-actions",
+        "mise-en-place",
         "pre-commit",
         "regex"
       ]
