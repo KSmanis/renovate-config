@@ -20,6 +20,9 @@
     "customManagers:githubActionsVersions",
     ":enablePreCommit"
   ],
+  "lockFileMaintenance": {
+    "automerge": true
+  },
   "packageRules": [
     {
       "matchDatasources": [
