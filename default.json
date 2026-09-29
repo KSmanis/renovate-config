@@ -66,20 +66,20 @@
       "automerge": true,
       "automergeType": "branch",
       "matchManagers": [
+        "custom.regex",
         "docker-compose",
         "dockerfile",
         "github-actions",
         "mise",
-        "pre-commit",
-        "regex"
+        "pre-commit"
       ]
     },
     {
       "automerge": false,
       "matchManagers": [
+        "custom.regex",
         "docker-compose",
-        "dockerfile",
-        "regex"
+        "dockerfile"
       ],
       "matchUpdateTypes": [
         "major"
