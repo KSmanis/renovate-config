@@ -1,19 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "customManagers": [
-    {
-      "customType": "jsonata",
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "astral-sh/uv",
-      "fileFormat": "toml",
-      "managerFilePatterns": [
-        "/(^|/)pyproject\\.toml$/"
-      ],
-      "matchStrings": [
-        "{\"currentValue\": $substring(tool.uv.\"required-version\", 2)}"
-      ]
-    }
-  ],
   "extends": [
     "config:best-practices",
     "customManagers:dockerfileVersions",
@@ -38,29 +24,10 @@
         "github-tags"
       ],
       "matchPackageNames": [
-        "SonarSource/sonarcloud-github-action",
         "SonarSource/sonarqube-scan-action",
         "shellcheck-py/shellcheck-py"
       ],
       "versioning": "loose"
-    },
-    {
-      "matchDepTypes": [
-        "action"
-      ],
-      "matchPackageNames": [
-        "github/super-linter"
-      ],
-      "minimumReleaseAge": "1 day"
-    },
-    {
-      "matchDatasources": [
-        "pypi"
-      ],
-      "matchPackageNames": [
-        "pygit2"
-      ],
-      "minimumReleaseAge": "1 day"
     },
     {
       "automerge": true,
