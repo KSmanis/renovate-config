@@ -20,11 +20,7 @@
       "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)((\\.|-r)(?<build>\\d+))?-ls(?<revision>\\d+)$"
     },
     {
-      "matchDatasources": [
-        "github-tags"
-      ],
       "matchPackageNames": [
-        "SonarSource/sonarqube-scan-action",
         "shellcheck-py/shellcheck-py"
       ],
       "versioning": "loose"
@@ -53,13 +49,7 @@
       ]
     },
     {
-      "automerge": true,
-      "automergeType": "branch",
       "groupName": "uv",
-      "matchDatasources": [
-        "github-releases",
-        "github-tags"
-      ],
       "matchDepNames": [
         "astral-sh/uv",
         "astral-sh/uv-pre-commit"
